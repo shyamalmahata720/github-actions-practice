@@ -1,0 +1,21 @@
+name: Nightly Check
+
+on:
+  schedule:
+    - cron: "30 8 * * * *"
+
+env:
+  APP_NAME: OrdersApi
+
+jobs:
+  check:
+    display-name: Health Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: CheckOut
+        uses: actions/checkout@v4
+
+      - name: Print Result
+        run: echo "Checking ${{env.APP_NAME}}"
