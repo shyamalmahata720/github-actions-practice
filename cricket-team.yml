@@ -1,0 +1,11 @@
+cricket-teams:
+  - team-name: CSK
+    city: Chennai
+    founded: 2009
+    players:
+      - name: MSD
+        role: batsmen
+      - name: Raina
+        role: all-rounder
+      - name: Jaddu
+        role: bowler
